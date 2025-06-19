@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Adinda Lidia Selvi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fff7fa; /* Very light pink background */
+        }
+        .section-title {
+            border-bottom: 2px solid #ec4899; /* Pink accent */
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #be185d; /* Darker pink */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .nav-link {
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem;
+            transition: background-color 0.3s, color 0.3s;
+            color: #374151; /* Gray text */
+        }
+        .nav-link:hover, .nav-link.active {
+            background-color: #ec4899; /* Pink accent */
+            color: white;
+        }
+        .skill-tag {
+            background-color: #fce7f3; /* Light pink */
+            color: #be185d; /* Darker pink */
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <span class="font-bold text-xl text-pink-600">Adinda Lidia Selvi</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#profile" class="nav-link">Profil</a>
+                        <a href="#education" class="nav-link">Pendidikan</a>
+                        <a href="#organization" class="nav-link">Organisasi & Pekerjaan</a>
+                        <a href="#skills" class="nav-link">Keterampilan</a>
+                        <a href="files/CV_Adinda_Lidia_Selvi.pdf" download class="nav-link bg-pink-500 text-white hover:bg-pink-600">Download CV</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-pink-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-pink-500">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#profile" class="nav-link block">Profil</a>
+                <a href="#education" class="nav-link block">Pendidikan</a>
+                <a href="#organization" class="nav-link block">Organisasi & Pekerjaan</a>
+                <a href="#skills" class="nav-link block">Keterampilan</a>
+                <a href="files/CV_Adinda_Lidia_Selvi.pdf" download class="nav-link block bg-pink-500 text-white hover:bg-pink-600">Download CV</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+        <header class="text-center mb-12 pt-8">
+            <img src="assets/images/Adinda Lidia Selvi.jpeg" alt="Foto Adinda Lidia Selvi" class="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-6 object-cover shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/150x150/F8FAFC/EC4899?text=Foto+Anda';">
+            <h1 class="text-4xl font-bold text-gray-900">Adinda Lidia Selvi</h1>
+            <p class="text-xl text-pink-600 mt-1">Mahasiswa Teknik Elektro</p>
+            <div class="mt-4 flex flex-wrap justify-center space-x-4 text-sm text-gray-600">
+                <span>Jalan Bulusan Utara I Nomor 7B, Bulusan, Tembalang, Kota Semarang, Jawa Tengah.</span> 
+                <span>|</span>
+                <a href="tel:+6285647745401" class="hover:text-pink-600">+62 856 4774 5401</a> 
+                <span>|</span>
+                <a href="mailto:adindalidia76@gmail.com" class="hover:text-pink-600">adindalidia76@gmail.com</a> 
+            </div>
+            </header>
+
+        <section id="profile" class="mb-12 scroll-mt-20">
+            <h2 class="section-title">Profil</h2> 
+            <div class="card">
+                <p class="text-gray-700 leading-relaxed profile-text">
+                    Mahasiswa Politeknik Negeri Semarang jurusan Teknik Elektro yang memiliki semangat kerja tinggi dan kemampuan komunikasi yang baik.  Berpengalaman dalam organisasi serta memiliki keterampilan dalam manajemen acara dan pelayanan pelanggan.  Siap bekerja dalam tim serta memberikan pelayanan terbaik di lingkungan kerja. 
+                </p>
+                <div class="mt-6">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Minat & Motivasi:</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Saya tertarik untuk bekerja sebagai Waiter / Helper / Greeter karena saya ingin mengembangkan keterampilan komunikasi, pelayanan pelanggan, serta pengalaman di dunia kerja.  Dengan latar belakang organisasi yang saya miliki, saya yakin dapat memberikan kontribusi yang baik bagi tim dan perusahaan. 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="mb-12 scroll-mt-20">
+            <h2 class="section-title">Pendidikan</h2> 
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-gray-800">Politeknik Negeri Semarang</h3>
+                    <p class="text-md text-pink-600">Jurusan Teknik Elektro, Program Studi Rekayasa Elektronika</p>
+                    <p class="text-sm text-gray-500">(2022 - Sekarang)</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-gray-800">SMA Negeri 1 Brebes</h3>
+                    <p class="text-md text-pink-600">Jurusan IPA</p>
+                    <p class="text-sm text-gray-500">(2019-2022)</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="organization" class="mb-12 scroll-mt-20">
+            <h2 class="section-title">Pengalaman Organisasi & Pekerjaan</h2>
+            <div class="card mb-6">
+                <h3 class="text-xl font-semibold text-gray-800">Himpunan Mahasiswa Elektro - Bendahara Divisi Sponsorship & Kewirausahaan</h3>
+                <p class="text-md text-pink-600">Politeknik Negeri Semarang</p>
+                <p class="text-sm text-gray-500 mb-2">(2023 - Sekarang)</p>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Mengelola keuangan dan mengatur sponsor untuk berbagai event. </li>
+                    <li>Berkomunikasi dengan pihak eksternal untuk mendapatkan dana sponsorship.</li>
+                    <li>Menyusun laporan keuangan secara transparan dan akurat.</li>
+                </ul>
+            </div>
+            <div class="card mb-6">
+                <h3 class="text-xl font-semibold text-gray-800">OSIS SMA Negeri 1 Brebes - Ketua OSIS</h3> 
+                <p class="text-md text-pink-600">SMA Negeri 1 Brebes</p>
+                <p class="text-sm text-gray-500 mb-2">(2020 - 2021)</p>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Memimpin organisasi dan mengkoordinasikan berbagai kegiatan sekolah. </li>
+                    <li>Mengatur program kerja dan memastikan pelaksanaan berjalan dengan baik. </li>
+                    <li>Mengembangkan kemampuan komunikasi dan kerja sama tim. </li>
+                </ul>
+            </div>
+            <div class="card mb-6">
+                <h3 class="text-xl font-semibold text-gray-800">OSIS SMA Negeri 1 Brebes - Sekretaris</h3> 
+                <p class="text-md text-pink-600">SMA Negeri 1 Brebes</p>
+                <p class="text-sm text-gray-500 mb-2">(2019 - 2020)</p>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Menyusun proposal dan laporan kegiatan.</li>
+                    <li>Mengatur jadwal rapat dan dokumentasi program kerja. </li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3 class="text-xl font-semibold text-gray-800">Crew Wedding Organizer (WO)</h3> 
+                <p class="text-md text-pink-600">Freelance</p>
+                <p class="text-sm text-gray-500 mb-2">(2023 - Sekarang)</p>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Membantu persiapan dan pelaksanaan acara pernikahan. </li>
+                    <li>Berkoordinasi dengan tim untuk memastikan acara berjalan lancar. </li>
+                    <li>Mengatur tamu undangan dan memberikan pelayanan terbaik selama acara. </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills" class="mb-12 scroll-mt-20">
+            <h2 class="section-title">Keterampilan</h2> 
+            <div class="card">
+                <div>
+                    <span class="skill-tag">Komunikasi yang baik</span> 
+                    <span class="skill-tag">Mampu bekerja dalam tim</span> 
+                    <span class="skill-tag">Manajemen waktu yang baik</span> 
+                    <span class="skill-tag">Berorientasi pada pelayanan pelanggan</span> 
+                    <span class="skill-tag">Teliti dan bertanggung jawab</span> 
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="bg-gray-800 text-white text-center py-6 mt-12">
+        <p>&copy; <span id="currentYear"></span> Adinda Lidia Selvi. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+        
+        // Active Nav Link Styling
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav a.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                // Adjust this value (e.g., -70) if your fixed header obstructs sections
+                if (pageYOffset >= (sectionTop - sectionHeight / 3 - 70)) { 
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') && link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+            // Highlight 'Profil' if scrolled near top
+            if (window.pageYOffset < 200 && navLinks.length > 0) {
+                navLinks.forEach(link => link.classList.remove('active'));
+                const profileLink = document.querySelector('nav a.nav-link[href="#profile"]');
+                if (profileLink) profileLink.classList.add('active');
+            }
+        });
+
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
